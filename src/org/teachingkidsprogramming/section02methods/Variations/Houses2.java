@@ -1,9 +1,9 @@
-package org.teachingkidsprogramming.section02methods;
+package org.teachingkidsprogramming.section02methods.Variations;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Reds;
 
-public class Houses
+public class Houses2
 {
   public static void main(String[] args)
   {
@@ -20,12 +20,26 @@ public class Houses
   {
     Tortoise.setPenColor(Reds.Red);
     Tortoise.move(height);
-    Tortoise.turn(90);
-    Tortoise.move(30);
-    Tortoise.turn(90);
+    //drawFlatRoof();
+    //draw pointy roof
+    drawPointyRoof();
     Tortoise.move(height);
     Tortoise.turn(-90);
     Tortoise.move(20);
     Tortoise.turn(-90);
+  }
+  private static void drawPointyRoof()
+  {
+    Tortoise.turn(4);
+    Tortoise.move(4);
+    Tortoise.turn(4);
+    Tortoise.move(4);
+    Tortoise.turn(4);
+  }
+  private static void drawFlatRoof()
+  {
+    Tortoise.turn(90);
+    Tortoise.move(30);
+    Tortoise.turn(90);
   }
 }
