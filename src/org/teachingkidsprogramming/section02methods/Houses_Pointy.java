@@ -13,8 +13,8 @@ public class Houses_Pointy
     int height = 40;
     drawHouseFlatRoof(height);
     drawHousePointyRoof(120);
-    //drawHouse(90);
-    //drawHouse(20);
+    drawHouseFlatRoof(15);
+    drawHousePointyRoof(55);
   }
   private static void drawHousePointyRoof(int height)
   {
