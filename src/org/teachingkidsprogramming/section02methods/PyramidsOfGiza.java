@@ -9,13 +9,13 @@ public class PyramidsOfGiza
   {
     setUpPyramidLand();
     pyramidone();
-    /*Tortoise.turn(-90);
+    Tortoise.turn(-90);
     Tortoise.move(100);
     Tortoise.turn(90);
     Tortoise.move(100);
     Tortoise.turn(-90);
     Tortoise.move(100);
-    */ Tortoise.turn(90);
+    Tortoise.turn(90);
     Tortoise.move(100);
     Tortoise.turn(135);
     Tortoise.move(210);
