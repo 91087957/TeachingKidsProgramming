@@ -14,6 +14,7 @@ public class HiLow3
     for (int i = 1; i <= 8; i++)
     {
       int guess = MessageBox.askForNumericalInput("What is your guess ? ");
+      // input validation
       while (guess < 1 || guess > 100)
       {
         MessageBox.showMessage("Pleasee enter a valid guess between 1 and " + upperRange);
@@ -28,7 +29,6 @@ public class HiLow3
       else if (guess > answer)
       {
         MessageBox.showMessage("Too high");
-        MessageBox.showMessage(" You have 7 guesses left");
       }
       else
       {
