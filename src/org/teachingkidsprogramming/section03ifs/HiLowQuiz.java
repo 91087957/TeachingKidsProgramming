@@ -9,8 +9,7 @@ public class HiLowQuiz extends org.teachingkidsprogramming.recipes.quizzes.grade
   @Override
   public void question1()
   {
-    int y = Tortoise.getY();
-    if (y == 115)
+    if (Tortoise.getY() == 115)
     {
       Tortoise.turn(63);
     }
@@ -18,15 +17,17 @@ public class HiLowQuiz extends org.teachingkidsprogramming.recipes.quizzes.grade
   @Override
   public void question2()
   {
-    int y = Tortoise.getY();
-    int x = Tortoise.getX();
-    
+    if ((Tortoise.getX() < Tortoise.getY()))
     {
-      if (x > y)
+      Tortoise.turn(-54);
+    }
+    else
+    {
+      Tortoise.turn(22);
+    }
+    {
     }
     //  If the X position of tortoise is less than Y position of tortoise
-    Tortoise.turn(-54);
-    Tortoise.turn(22);
   }
   @Override
   public void question3()
@@ -37,7 +38,10 @@ public class HiLowQuiz extends org.teachingkidsprogramming.recipes.quizzes.grade
   public void question4()
   {
     //  If the Y position of tortoise is greater than 50
-    Tortoise.turn(-177);
+    if (Tortoise.getY() > 50)
+    {
+      Tortoise.turn(-177);
+    }
   }
   public static void main(String[] args)
   {
