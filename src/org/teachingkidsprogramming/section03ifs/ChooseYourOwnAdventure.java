@@ -22,7 +22,7 @@ public class ChooseYourOwnAdventure
     {
       //          wakeUp (recipe below) --#2.1
       //          ------------- Recipe for wakeUp --#2.2
-      //              Tell the user "You wake up and have a boring day. The end." --#1
+      MessageBox.showMessage("You wake up and have a boring day. The end.");
       //          ------------- End of wakeUp recipe --#2.3
     }
     else if ("explore".equalsIgnoreCase(action))
@@ -35,6 +35,8 @@ public class ChooseYourOwnAdventure
       //            pourIntoToilet (recipe below) --#12.1
       //            ------------- Recipe for pourIntoToilet --#12.2
       //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
+      MessageBox.showMessage(
+          "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
       //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
       //               If they answer "yes" --#13.1
       //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
