@@ -70,17 +70,15 @@ public class ChooseYourOwnAdventure
     MessageBox.showMessage(
         "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
     String answer = MessageBox.askForTextInput("Do you want to train to be a NINJA? 'Yes' or 'HECK YES'?");
-    //               If they answer "yes" --#13.1
-    if ("yes".equalsIsIgnoreCase(answer))
+    if (answer.equalsIsIgnoreCase("yes"))
     {
       //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+      MessageBox.showMessage();
     }
-    //               Otherwise, if they answer "heck yes" --#13.2
-    else if ("heck yes".equalsIgnoreCase(answer))
+    else if (answer.equalsIgnoreCase("heck yes"))
     {
       //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
     }
-    //               Otherwise, if they answer anything else --#13.3
     else
     {
       //                    endStory --#16
