@@ -2,6 +2,7 @@ package org.teachingkidsprogramming.section04mastery;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Blues;
 
 public class PentagonCrazy
@@ -13,9 +14,11 @@ public class PentagonCrazy
     //
     createColorPalette();
     //
-    //    drawPentagon (recipe below) --#10.1
     //
-    //    ------------- Recipe for drawPentagon --#10.2
+    drawPentagon();
+  }
+  private static void drawPentagon()
+  {
     for (int i = 0; i < 200; i++)
     {
       //
@@ -25,14 +28,11 @@ public class PentagonCrazy
       int length = i;
       Tortoise.move(length);
       Tortoise.turn(360 / 5);
-      //        Turn the tortoise 1 more degree --#5
       Tortoise.turn(1);
     }
-    //    ------------- End of drawPentagon recipe --#10.3
   }
   private static void adjustPen()
   {
-    //        Change the pen color of the line the tortoise draws to the next color on the color wheel --#6
     Tortoise.setPenColor(ColorWheel.getNextColor());
     //        Increase the tortoises pen width by 1 --#15                                              
     //        If the tortoise's pen width is greater than 4, then --#17
@@ -41,9 +41,9 @@ public class PentagonCrazy
   }
   private static void createColorPalette()
   {
-    //    Add steel blue to the color wheel --#7
     ColorWheel.addColor(Blues.SteelBlue);
     //    Add dark orchid to the color wheel --#11
+    ColorWheel.addColor(PenColors.Purples.DarkOrchid);
     //    Add dark slate blue to the color wheel --#12
     //    Add teal to the color wheel --#13
     //    Add indigo to the color wheel --#14
