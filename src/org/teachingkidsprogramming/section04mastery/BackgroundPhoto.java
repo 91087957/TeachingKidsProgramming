@@ -1,6 +1,9 @@
 package org.teachingkidsprogramming.section04mastery;
 
+import java.awt.Color;
+
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
 public class BackgroundPhoto
 {
@@ -12,16 +15,16 @@ public class BackgroundPhoto
     Tortoise.show();
     Tortoise.setSpeed(10);
     int side = 2;
-    //  Do the following 75 times --#7.1
-    //     Set the current pen color to yellow --#6.1
-    //     Use the current pen color for the line the tortoise draws --#6.2
-    side++;
-    Tortoise.move(side);
-    Tortoise.setX(555);
-    Tortoise.setY(65);
-    Tortoise.turn(360 / 3);
-    //     Turn the tortoise 1 more degree --#5
-    Tortoise.turn(1);
-    //  End Repeat --#7.2
+    for (int i = 0; i < 75; i++)
+    {
+      Color currColor = PenColors.Yellows.Yellow;
+      Tortoise.setPenColor(currColor);
+      side++;
+      Tortoise.move(side);
+      Tortoise.setX(555);
+      Tortoise.setY(65);
+      Tortoise.turn(360 / 3);
+      Tortoise.turn(1);
+    }
   }
 }
