@@ -13,7 +13,7 @@ public class RecursiveSquare
     //
     //  Set the speed to the fastest --#8
     //  Update the length to 100.0 --#1.1
-    double length = 50.0;
+    double length = 100.0;
     //  MakeASquare with the current length(recipe below) --#11.4
     //
     //  Create the makeASquare recipe --#11.1
@@ -21,12 +21,12 @@ public class RecursiveSquare
     //      Run the recipe moveToTheSquareStart with the current length  --#4.3
     //
     //      Create the moveToTheSquareStart recipe  --#4.1
-    //          Set the pen up for the tortoise --#1.2
-    //          Move the tortoise the current length divided by two --#1.3
-    //          Turn the tortoise 90 degrees to the left --#2.1
-    //          Move the tortoise the current length divided by two --#2.2
-    //          Turn the tortoise 180 degrees to the right --#3.1
-    //          Set the pen down for the tortoise --#3.2
+    Tortoise.setPenUp();
+    Tortoise.move(length / 2);
+    Tortoise.turn(-90);
+    Tortoise.move(length / 2);
+    Tortoise.turn(180);
+    Tortoise.setPenDown();
     //      End of moveToTheSquareStart recipe  --#4.2
     //
     //  Do the following 4 times --#7.1
