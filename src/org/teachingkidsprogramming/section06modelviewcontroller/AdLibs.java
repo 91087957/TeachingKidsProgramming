@@ -16,6 +16,6 @@ public class AdLibs
     //  Add the words '"Then I " + currentEdVerb + " " to the currentStory --#5
     //  Add the words "my " + currentBodyPart + ". " to the current story --#7
     //  Show the currentStory in a message box as a message --#1.1
-    MessageBox.showMessage(currentStory);
+    MessageBox.showMessage("hello");
   }
 }
