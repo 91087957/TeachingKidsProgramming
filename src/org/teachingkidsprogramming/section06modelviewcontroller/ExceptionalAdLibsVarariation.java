@@ -8,6 +8,7 @@ public class ExceptionalAdLibsVarariation
   {
     String adverb = askAdverb();
     String edverb = askEdverb();
+    String BodyPart = askBodyPart();
   }
   private static String askAdverb()
   {
@@ -38,5 +39,10 @@ public class ExceptionalAdLibsVarariation
       askEdverb();
     }
     return edverb;
+  }
+  private static String askBodyPart()
+  {
+    String askBodyPart = MessageBox.askForTextInput("Enter a body part: ");
+    if(bodypart.isEmp)
   }
 }// end of class
