@@ -1,10 +1,19 @@
 package org.teachingkidsprogramming.section07objects;
 
+import java.util.ArrayList;
+
+import org.teachingextensions.logo.Turtle;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors;
+
+import javafx.scene.text.Text;
+
+import org.junit.internal.runners.model.EachTestNotifier;
+import org.teachingextensions.WindowUtils.MultiTurtleWindow*;
+
 public class CloneTurtles
 {
-  // Uncomment the two lines of code below to create a container and a window for your turtles --#1
-  // public ArrayList<Turtle> turtles = new ArrayList<Turtle>();
-  // public MultiTurtleWindow mtw     = new MultiTurtleWindow();
+  public ArrayList<Turtle> turtles = new ArrayList<Turtle>();
+  public MultiTurtleWindow mtw     = new MultiTurtleWindow();
   //
   public CloneTurtles()
   {
@@ -13,16 +22,21 @@ public class CloneTurtles
   //
   private void showSomeTurtles()
   {
-    // Use a FOR loop to add your three turtles --#4.1
-    //      Create a turtle instance  --#2.1
-    //      Add your turtles to your turtle container --#2.2
-    // End Repeat --#4.2
+    for (int i = 0; i < 3; i++)
+    {
+      Turtle turtle = new Turtle();
+      turtles.add(turtle);
+    }
     //
-    // Create a variable to count the number of turtles in the container --#3.1
-    // Uncomment to Show the number of turtles in the container on the window --#3.2
-    // new Text("There are " + numberOfTurtles + " turtles in the turtle container").setTopLeft(50, 50).setPenColor(PenColors.Yellows.Gold).addTo(mtw);
+    int numberOfTurtles = turtles.size();
+    new Text("There are " + numberOfTurtles + " turtles in the turtle container").setTopLeft(50, 50)
+        .setPenColor(PenColors.Yellows.Gold).addTo(mtw);
     //
     // Use a FOREACH loop to add your turtles to your window --#5.1
+    for (Turtle turtle : turtles)
+    {
+      mtw.addAndShowTurtle(turtle);
+    }
     //      Add and Show your turtles on your window --#5.3
     // End Repeat --#5.2
     //
