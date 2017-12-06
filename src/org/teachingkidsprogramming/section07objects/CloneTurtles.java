@@ -2,13 +2,11 @@ package org.teachingkidsprogramming.section07objects;
 
 import java.util.ArrayList;
 
+import org.teachingextensions.WindowUtils.MultiTurtleWindow;
 import org.teachingextensions.logo.Turtle;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
 import javafx.scene.text.Text;
-
-import org.junit.internal.runners.model.EachTestNotifier;
-import org.teachingextensions.WindowUtils.MultiTurtleWindow*;
 
 public class CloneTurtles
 {
@@ -32,18 +30,16 @@ public class CloneTurtles
     new Text("There are " + numberOfTurtles + " turtles in the turtle container").setTopLeft(50, 50)
         .setPenColor(PenColors.Yellows.Gold).addTo(mtw);
     //
-    // Use a FOREACH loop to add your turtles to your window --#5.1
     for (Turtle turtle : turtles)
     {
       mtw.addAndShowTurtle(turtle);
     }
-    //      Add and Show your turtles on your window --#5.3
-    // End Repeat --#5.2
     //
-    // Use a FOR loop to teleport all of your turtles around your window  --#6.1
-    //      Get your turtle's current position and then set the X position to i*100 + 350 --#6.3
-    //      Get your turtle's current position and then set the Y position to i*100 + 100 --#6.4
-    // End Repeat --#6.2
+    for (int i = 0; i < 3; i++);
+    {
+      turtles.get(i).setX(i * 100 + 350);
+      turtles.get(i).setY(i * 100 + 100);
+    }
     //
     // Use a FOREACH loop to set values for all of your turtles --#7.1
     //      Set the pen width to 10 pixels -- #7.3
