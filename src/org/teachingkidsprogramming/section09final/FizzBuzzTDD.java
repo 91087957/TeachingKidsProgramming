@@ -18,7 +18,18 @@ public class FizzBuzzTDD
   @Test
   public void test1Returns1()
   {
-    //String result = FizzBuzzTDD.convert(1);
-    assertEquals(1, 0);
+    String result = FizzBuzzTDD.convert(1);
+    assertEquals("1", result);
+  }
+  public static void  String
+  convert (int num)
+  {
+    if( num % 15 == 0)
+      return "FizzBuzz";
+    if (num % 3 == 0)
+      return "Fizz";
+    if(num % 5 == 0 )
+      return "Buzz";
+    return num + "";
   }
 }

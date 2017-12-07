@@ -23,7 +23,7 @@ public class SpiderWebQuiz extends SpiderQuiz
   }
   public void question3()
   {
-    //      Create and then call a recipe called grow which 
+    grow();
     //      Changes the current length so it is multiplied by 2.5
   }
   public void question4()
